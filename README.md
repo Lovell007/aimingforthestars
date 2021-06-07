@@ -47,8 +47,6 @@ https://whimsical.com/solar-system-KzsLbKUkwnHEuXnNqRstZi
 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MVP and PostMVP.  Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.  
-
 #### MVP 
 
 - Implement THREE.js, spacekit.js, and react three fiber to create a 3d solar system
