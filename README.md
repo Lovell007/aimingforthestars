@@ -10,6 +10,10 @@ Aiming for the Stars
 
 Interactive 3d solar system with dynamic and static information about the palentary bodies within.
 
+## Wireframes
+
+https://whimsical.com/6gcF8ATuEAoE6mTPVTRU2x
+
 ## Component Hierarchy
 
 https://whimsical.com/solar-system-KzsLbKUkwnHEuXnNqRstZi
