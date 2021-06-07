@@ -116,6 +116,6 @@ NASA API
 | Flight Controls Component| M | 5hrs |  |  |
 | Ephemerides Calculator Component| L | 6hrs |  |  |
 | Initial CSS| 4hrs | M |  |  |
-| Final CSS Styling| M | 4hrs |  |  |
+| Final CSS Styling| 4hrs | M |  |  |
 | Troubleshooting| H | 6hrs |  |  |
 | Total | H | 33.5hrs |  |  |
