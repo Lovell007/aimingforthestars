@@ -115,6 +115,7 @@ NASA API
 | Create Solar System Component| H | 5hrs |  |  |
 | Flight Controls Component| M | 5hrs |  |  |
 | Ephemerides Calculator Component| L | 6hrs |  |  |
+| Initial CSS| 4hrs | M |  |  |
 | Final CSS Styling| M | 4hrs |  |  |
 | Troubleshooting| H | 6hrs |  |  |
 | Total | H | 33.5hrs |  |  |
