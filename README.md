@@ -8,7 +8,7 @@ Aiming for the Stars
 
 ## Project Description
 
-Interactive 3d solar system with dynamic and static information about the palentary bodies within.
+Interactive solar system with dynamic and static information about the palentary bodies within.
 
 ## Wireframes
 
@@ -72,40 +72,14 @@ NASA API
     link: "https://kauai.ccmc.gsfc.nasa.gov/DONKI/view/FLR/10122/-1"
 }
 ```
-AirTable API
 
-```json
-{
-    "records": [
-        {
-            "id": "recxxC2usroh1Z8ex",
-            "fields": {
-                "userName": "Jtronic",
-                "favoritePlanet": "Jupiter",
-                "age": 34
-            },
-            "createdTime": "2021-06-07T14:26:07.000Z"
-        },
-        {
-            "id": "recvh04NzR73NZXQW",
-            "fields": {
-                "userName": "Abigail",
-                "favoritePlanet": "Pluto",
-                "age": 11
-            },
-            "createdTime": "2021-06-07T14:26:07.000Z"
-        }
-    ],
-    "offset": "recvh04NzR73NZXQW"
-}
-```
 
 ### MVP/PostMVP
 
 #### MVP 
 
 - Use NASA API to display dynamic and static information about all 9 planets and the sun
-- Allow users to create their own planet including name, mass, color/textures, elemental composition, moons, and description.
+- Create and implement custom API via Airtable to allow users to create their own planet including name, mass, color/textures, elemental composition, moons, and description.
 - Display username and avatar in Navbar
 
 #### PostMVP
