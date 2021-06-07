@@ -81,7 +81,6 @@ AirTable API
             "id": "recxxC2usroh1Z8ex",
             "fields": {
                 "userName": "Jtronic",
-                "password": "abc123",
                 "favoritePlanet": "Jupiter",
                 "age": 34
             },
@@ -91,7 +90,6 @@ AirTable API
             "id": "recvh04NzR73NZXQW",
             "fields": {
                 "userName": "Abigail",
-                "password": "unicorns",
                 "favoritePlanet": "Pluto",
                 "age": 11
             },
@@ -106,13 +104,13 @@ AirTable API
 
 #### MVP 
 
-- Implement THREE.js, spacekit.js, and react three fiber to create a 3d solar system
 - Use NASA API to display dynamic and static information about all 9 planets and the sun
-- Allow users to create a username, password, and avatar
+- Allow users to create their own planet including name, mass, color/textures, elemental composition, moons, and description.
 - Display username and avatar in Navbar
 
 #### PostMVP
 
+- Implement THREE.js, spacekit.js, and react three fiber to create a 3d solar system
 - Use THREE.js to import flight controls and allow signed in users to traverse the 3d solar system in first person
 - Allow a 3rd person display with selectable rocket ships
 - Create an Ephemerides calculator to display planetary alignment in realtime
@@ -123,7 +121,7 @@ AirTable API
 |---|---| ---|
 |June 7| Proposal / Functionality for NASA and airtable APIs | Incomplete
 |July 8| NavBar / Username Form (including avatar) | Incomplete
-|June 9| Create Planet component / Display Planetary Info component | Incomplete
+|June 9| Create Planet Component / Display Planetary Info Component | Incomplete
 |June 10| Create Solar System Component | Incomplete
 |June 11| Flight Controls Component | Incomplete
 |June 12| Ephemerides Calculator Component | Incomplete
