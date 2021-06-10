@@ -29,7 +29,7 @@ export default function NewPlanet() {
 
 
   return (
-    <div>
+    <div id="planetForm">
       <form onSubmit={handleSubmit}>
         <p>Planet Name</p>
           <input type="text" value={planetName}
