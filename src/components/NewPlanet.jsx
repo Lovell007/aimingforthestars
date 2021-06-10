@@ -27,6 +27,7 @@ export default function NewPlanet() {
     // history.push("/solarSystem")
   }
 
+  console.log(textures)
 
   return (
     <div id="planetForm">
@@ -35,15 +36,15 @@ export default function NewPlanet() {
           <input type="text" value={planetName}
           onChange={(e) => setPlanetName(e.target.value)}/>
         <br />
-        <p>Mass</p>
-          <input type="number" value={mass}
+        <p>Mass {mass}</p>
+          <input type="range" min="1" max="25" step="1" value={mass}
           onChange={(e) => setMass(e.target.value)}/>
         <br />
         <p>Texture</p>
-        <select value={selectedTexture}
+        <select id="textureDB" value={selectedTexture}
           onChange={(e) => setSelectedTexture(e.target.value)}>
           {textures.map((texture) => (
-            <option>{texture.name}</option>
+            <option>{texture.textureName}</option>
           ))}
         </select>
         <br />
