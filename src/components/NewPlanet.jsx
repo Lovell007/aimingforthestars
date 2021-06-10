@@ -6,7 +6,7 @@ import textures from "../textures.json"
 export default function NewPlanet() {
   const [planetName, setPlanetName] = useState('')
   const [mass, setMass] = useState('')
-  const [selectedTexture, setSelectedTexture] = useState('')
+  const [selectedTexture, setSelectedTexture] = useState({})
   const [elementalComposition, setElementalComposition] = useState('')
   const [moons, setMoons] = useState('')
   const [description, setDescription] = useState('')
@@ -53,7 +53,7 @@ export default function NewPlanet() {
           onChange={(e) => setElementalComposition(e.target.value)}/>
         <br />
         <p>Moons</p>
-          <input type="text" value={moons}
+          <input type="range" min="0" max="7" step="1" value={moons}
           onChange={(e) => setMoons(e.target.value)}/>
         <br />
         <p>Description</p>
