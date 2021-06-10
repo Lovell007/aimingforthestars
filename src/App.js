@@ -8,7 +8,9 @@ function App() {
   return (
     <div>
       <NavBar />
-      <NewPlanet />
+      <Route exact path="/">
+        <NewPlanet />
+      </Route>
       <Route exact path="/planetaryList">
         <PlanetList />
       </Route>

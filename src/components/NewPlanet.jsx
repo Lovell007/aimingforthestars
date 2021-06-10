@@ -4,7 +4,7 @@ import { newPlanet } from "../services/api"
 import textures from "../textures.json"
 
 export default function NewPlanet() {
-  const [name, setName] = useState('')
+  const [planetName, setPlanetName] = useState('')
   const [mass, setMass] = useState('')
   const [selectedTexture, setSelectedTexture] = useState('')
   const [elementalComposition, setElementalComposition] = useState('')
@@ -16,7 +16,7 @@ export default function NewPlanet() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     const createNewPlanet = {
-      name,
+      planetName,
       mass,
       selectedTexture,
       elementalComposition,
@@ -24,22 +24,22 @@ export default function NewPlanet() {
       description
     }
     const res = await newPlanet(createNewPlanet)
-    history.push("/solarSystem")
+    // history.push("/solarSystem")
   }
 
 
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <label>Planet Name</label>
-          <input type="text" value={name}
-          onChange={(e) => setName(e.target.value)}/>
+        <p>Planet Name</p>
+          <input type="text" value={planetName}
+          onChange={(e) => setPlanetName(e.target.value)}/>
         <br />
-        <label>Mass</label>
-          <input type="text" value={mass}
+        <p>Mass</p>
+          <input type="number" value={mass}
           onChange={(e) => setMass(e.target.value)}/>
         <br />
-        <label>Texture</label>
+        <p>Texture</p>
         <select value={selectedTexture}
           onChange={(e) => setSelectedTexture(e.target.value)}>
           {textures.map((texture) => (
@@ -47,18 +47,20 @@ export default function NewPlanet() {
           ))}
         </select>
         <br />
-        <label>Elemental Composition</label>
+        <p>Elemental Composition</p>
           <input type="text" value={elementalComposition}
           onChange={(e) => setElementalComposition(e.target.value)}/>
         <br />
-        <label>Moons</label>
+        <p>Moons</p>
           <input type="text" value={moons}
           onChange={(e) => setMoons(e.target.value)}/>
         <br />
-        <label>Description</label>
+        <p>Description</p>
           <input type="text" value={description}
           onChange={(e) => setDescription(e.target.value)} />
-        <button type="submit">Create Your Planet</button>
+        <p>
+          <button type="submit">Create Your Planet</button>
+        </p>
       </form>
     </div>
   )
