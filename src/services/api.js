@@ -1,6 +1,6 @@
 import axios from "axios";
 const apiKey = process.env.REACT_APP_AIRTABLE_KEY;
-const baseURL = "https://api.airtable.com/v0/appMm1TVATqZCZK1R/Table%201";
+const baseURL = "https://api.airtable.com/v0/appMm1TVATqZCZK1R/planets";
 let moonURL = `https://api.airtable.com/v0/appMm1TVATqZCZK1R/moons`
 const config = {
   headers: {

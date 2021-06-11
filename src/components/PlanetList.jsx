@@ -23,7 +23,7 @@ export default function PlanetList() {
   // })}
   
   return <div>
-      {planets.map((planet) => {
+      {planets?.map((planet) => {
         return <div key={planet.id}>
           <Link to={`/planet/${planet.id}`}>
           {/* <p><img src={`../${foundTexture.map}`} id="planetListImg"/></p> */}

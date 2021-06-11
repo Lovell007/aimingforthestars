@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar"
 import NewPlanet from "./components/NewPlanet"
 import PlanetCard from './components/PlanetCard';
 import PlanetList from "./components/PlanetList"
+import SolarSystem from './components/SolarSystem';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
       </Route>
       <Route exact path="/planet/:id">
         <PlanetCard />
+      </Route>
+      <Route exact path="/solarSystem">
+        <SolarSystem />
       </Route>
       
     </div>
