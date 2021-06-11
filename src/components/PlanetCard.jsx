@@ -1,11 +1,7 @@
-import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router'
-import { Link } from 'react-router-dom'
 import { getPlanetCard } from "../services/api"
-import EditMoons from './EditMoons'
 import {getMoonData} from "../services/api"
-import PlanetList from './PlanetList'
 import textures from "../textures.json"
 
 
@@ -65,8 +61,8 @@ export default function PlanetCard() {
   }
   return (
     <div>
-      {/* <img src={`../${foundTexture.map}`} /> */}
-      <div style={{backgroundImage: `url(../${foundTexture.map})`, height: '100px', width: '100px'}}></div>
+      <img src={`../${foundTexture.map}`} id="planetImg"/>
+      {/* <div id="planetImg" style={{backgroundImage: `url(../${foundTexture.map})`}}></div> */}
       <p id="pcn">{planet.fields?.planetName}</p>
       <p id="pcm">Diameter {massCalculator} miles</p>
       <p id="pce">Composition {planet.fields?.elementalComposition}</p>

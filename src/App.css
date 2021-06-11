@@ -69,9 +69,14 @@ input, select {
   justify-content: space-evenly;
   font-size: 150%;
   font-weight: 400;
-  background-color: navy;
+  /* background-color: navy; */
   color: white;
   padding: 20px;
+  background-image: url('http://wallup.net/wp-content/uploads/2016/01/291501-space-Earth-horizon-sunrise-photography.jpg');
+  background-position: center;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+
 }
 
 #navBar a:link {
@@ -82,4 +87,12 @@ input, select {
 #navBar a:visited {
   color: white;
   text-decoration: none;
+}
+
+#planetImg {
+  margin: 20px 20px 20px 20px;
+  height: 350px;
+  width: 350px;
+  border-radius: 200px;
+  border: solid black 2px;
 }
