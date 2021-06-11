@@ -1,5 +1,6 @@
 import { Route } from 'react-router';
 import './App.css';
+import EditPlanet from './components/EditPlanet';
 import NavBar from "./components/NavBar"
 import NewPlanet from "./components/NewPlanet"
 import PlanetCard from './components/PlanetCard';
@@ -21,6 +22,9 @@ function App() {
       </Route>
       <Route exact path="/solarSystem">
         <SolarSystem />
+      </Route>
+      <Route exact path="/planet/edit/:id">
+        <EditPlanet />
       </Route>
       
     </div>

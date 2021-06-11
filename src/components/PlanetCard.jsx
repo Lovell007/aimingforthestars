@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router'
+import { Link } from 'react-router-dom'
 import { getPlanetCard } from "../services/api"
 import {getMoonData} from "../services/api"
 import textures from "../textures.json"
@@ -74,6 +75,9 @@ export default function PlanetCard() {
      {/* <EditMoons moons={planet.fields?.moons} /> */}
       <p id="pcmd"></p>
       <p id="pcd">{planet.fields?.description}</p>
+      <Link to={`/planet/edit/${planet.id}`}>
+        <button>Edit Planet</button>
+      </Link>
     </div>
   )
 }
