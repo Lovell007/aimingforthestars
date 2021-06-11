@@ -1,6 +1,7 @@
 import axios from "axios";
 const apiKey = process.env.REACT_APP_AIRTABLE_KEY;
 const baseURL = "https://api.airtable.com/v0/appMm1TVATqZCZK1R/Table%201";
+let moonURL = `https://api.airtable.com/v0/appMm1TVATqZCZK1R/moons`
 const config = {
   headers: {
     Authorization: `Bearer ${apiKey}`,
@@ -30,6 +31,16 @@ export const newPlanet = async (form) => {
 
   try {
     const res = await axios.post(`${baseURL}`, {fields: form}, config);
+    return res.data;
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+export const getMoonData = async (id) => {
+
+  try {
+    const res = await axios.get(`${moonURL}/${id}`, config);
     return res.data;
   } catch (error) {
     console.error(error);

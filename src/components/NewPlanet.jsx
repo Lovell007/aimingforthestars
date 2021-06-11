@@ -6,21 +6,22 @@ import textures from "../textures.json"
 export default function NewPlanet() {
   const [planetName, setPlanetName] = useState('')
   const [mass, setMass] = useState('')
-  const [selectedTexture, setSelectedTexture] = useState({})
+  const [selectedTexture, setSelectedTexture] = useState('')
   const [elementalComposition, setElementalComposition] = useState('')
-  const [moons, setMoons] = useState('')
+  const [moons, setMoons] = useState([{ name: 'moon'},{name: 'titan'}])
   const [description, setDescription] = useState('')
   const history = useHistory
 
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    let moonsArray = JSON.stringify(moons)
     const createNewPlanet = {
       planetName,
       mass,
       selectedTexture,
       elementalComposition,
-      moons,
+      moons: moonsArray,
       description
     }
     const res = await newPlanet(createNewPlanet)
